@@ -79,9 +79,7 @@ To run the tests:
 npm test
 ```
 
-Testing in the browser:
-
-*coming soon...*
+Testing in the browser: *coming soon...*
 
 ## Contributing
 
