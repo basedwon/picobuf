@@ -1,7 +1,7 @@
 {
   "name": "picobuf",
   "version": "0.0.1",
-  "description": "A nimble and powerful data modeling library for both the browser and Node.js, providing an agile approach to data modeling.",
+  "description": "A powerful and flexible library for working with Protocol Buffers in JavaScript",
   "author": "Basedwon <basedwon@protonmail.com>",
   "license": "MIT",
   "repository": {
