@@ -1,6 +1,6 @@
 {
   "name": "picobuf",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A nimble and powerful data modeling library for both the browser and Node.js, providing an agile approach to data modeling.",
   "author": "Basedwon <basedwon@protonmail.com>",
   "license": "MIT",
