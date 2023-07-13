@@ -1,0 +1,80 @@
+{
+  "name": "picobuf",
+  "version": "0.0.0",
+  "description": "A nimble and powerful data modeling library for both the browser and Node.js, providing an agile approach to data modeling.",
+  "author": "Basedwon <basedwon@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basedwon/picobuf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/basedwon/picobuf/issues"
+  },
+  "homepage": "https://github.com/basedwon/picobuf#readme",
+  "main": "lib/picobuf.js",
+  "exports": {
+    ".": {
+      "browser": "./lib/picobuf.js",
+      "node": "./lib/picobuf-n.js"
+    },
+    "./tests": {
+      "browser": "./test/test.js",
+      "node": "./test/test.js"
+    },
+    "./*/": "./lib/*/",
+    "./*": "./lib/*.js"
+  },
+  "browser": {
+    ".": "./lib/picobuf.js"
+  },
+  "types": "./lib/types.d.ts",
+  "scripts": {
+    "docs": "jsdoc2md lib/*.js > docs/api.md",
+    "test": "testr test/index.n.test.js"
+  },
+  "dependencies": {
+    "big.js": "^6.2.1",
+    "bs58": "^5.0.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "msgpack-lite": "^0.1.26"
+  },
+  "devDependencies": {
+    "@basd/testr": "^0.0.8",
+    "jsdoc": "^4.0.2",
+    "jsdoc-to-markdown": "^8.0.0"
+  },
+  "keywords": [
+    "picobuf",
+    "protobuf",
+    "msgpack",
+    "data serialization",
+    "data modeling",
+    "data validation",
+    "buffer",
+    "isomorphic",
+    "byte",
+    "binary",
+    "data structures",
+    "serialization",
+    "deserialization",
+    "encode",
+    "decode",
+    "node.js",
+    "browser",
+    "json",
+    "typescript",
+    "javascript",
+    "schema",
+    "schema definition",
+    "custom data types",
+    "message format",
+    "data transfer",
+    "web development",
+    "backend",
+    "frontend",
+    "realtime",
+    "communication"
+  ]
+}

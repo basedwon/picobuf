@@ -1,0 +1,19 @@
+models:
+  pet:
+    name:
+      type: string
+      default: George
+  user:
+    name: 'string'
+    type:
+      enum: type
+    pet: pet
+enums:
+  type:
+    - send
+    - ack
+services:
+  echo:
+    ping:
+      request: user
+      response: pet

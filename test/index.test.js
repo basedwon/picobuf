@@ -1,0 +1,8 @@
+require('./config.test')
+require('./enum.test')
+require('./domain.test')
+require('./encoder.test')
+require('./field.test')
+require('./service.test')
+require('./model.test')
+require('./picobuf.test')

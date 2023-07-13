@@ -1,0 +1,32 @@
+require('./index.test')
+
+const { Picobuf, Service, Model, Enum, Domain } = require('../lib/picobuf-n')
+const path = require('path')
+const fs = require('fs')
+
+describe('PicobufNode', () => {
+  it('should load a yaml configuration file', () => {
+    const file = path.resolve(__dirname, '../test/conf.yml')
+    const { User, Pet, Type, Echo } = new Picobuf(file, null, new Domain())
+    expect(User).to.be.instanceof(Model)
+    expect(Pet).to.be.instanceof(Model)
+    expect(Type).to.be.instanceof(Enum)
+    expect(Echo).to.be.instanceof(Service)
+    expect(Echo).to.be.instanceof(Service)
+    expect(Echo.ping).to.be.instanceof(Service.Method)
+    expect(Echo.ping.request).to.be.instanceof(Model)
+    expect(Echo.ping.response).to.be.instanceof(Model)
+  })
+  it('should load a JSON configuration file', () => {
+    const file = path.resolve(__dirname, '../test/conf.json')
+    const { User, Pet, Type, Echo } = new Picobuf(file, null, new Domain())
+    expect(User).to.be.instanceof(Model)
+    expect(Pet).to.be.instanceof(Model)
+    expect(Type).to.be.instanceof(Enum)
+    expect(Echo).to.be.instanceof(Service)
+    expect(Echo).to.be.instanceof(Service)
+    expect(Echo.ping).to.be.instanceof(Service.Method)
+    expect(Echo.ping.request).to.be.instanceof(Model)
+    expect(Echo.ping.response).to.be.instanceof(Model)
+  })
+})
