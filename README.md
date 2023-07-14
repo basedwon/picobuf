@@ -10,6 +10,8 @@
 [![Twitter](https://img.shields.io/badge/@basdwon%20-%20?logo=twitter&color=%23383a40)](https://twitter.com/basdwon)
 [![Discord](https://img.shields.io/badge/Basedwon%20-%20?logo=discord&color=%23383a40)](https://discordapp.com/users/basedwon)
 
+> Good things come in small packets
+
 Picobuf is a powerful and flexible library for working with Protocol Buffers in JavaScript. It makes it easy to define models, enums, and services, and provides an intuitive API for encoding and decoding messages. Check out the [documentation](#documentation) to learn more.
 
 ## Features
