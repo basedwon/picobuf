@@ -1,5 +1,7 @@
 # Picobuf
 
+> Good things come in small packets
+
 [![npm](https://img.shields.io/npm/v/picobuf?style=flat&logo=npm)](https://www.npmjs.com/package/picobuf)
 [![pipeline](https://gitlab.com/basedwon/picobuf/badges/master/pipeline.svg)](https://gitlab.com/basedwon/picobuf/-/pipelines)
 [![license](https://img.shields.io/npm/l/picobuf)](https://gitlab.com/basedwon/picobuf/-/blob/master/LICENSE)
@@ -11,8 +13,6 @@
 [![Discord](https://img.shields.io/badge/Basedwon%20-%20?logo=discord&color=%23383a40)](https://discordapp.com/users/basedwon)
 
 Picobuf is a powerful and flexible library for working with Protocol Buffers in JavaScript. It makes it easy to define models, enums, and services, and provides an intuitive API for encoding and decoding messages. Check out the [documentation](#documentation) to learn more.
-
-> Good things come in small packets
 
 ## Features
 
