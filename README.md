@@ -66,6 +66,29 @@ const encoded = User.encode(user)
 
 // decode
 const decoded = User.decode(encoded)
+
+// Enums
+const { Types } = new Picobuf({ enums: { Types: { values: ['SEN', 'ACK'] }}})
+// or
+const Types = pb.createEnum('Types', ['SEN', 'ACK'])
+
+console.log(Types.SEN) // => 'SEN'
+console.log(Types.getIndex('SEN')) // => 0
+// incorrect enum will throw an error
+console.log(Types.SEND) // => Invalid enum "SEND"
+
+// Services
+const { echo } = new Picobuf({ services: {
+  echo: {
+    ping: { // echo.ping service method
+      request: 'User', // string reference to model
+      response: User, // direct use of model instance
+    }
+  }
+}})
+const data = { name: 'Bob' }
+const encoded = echo.ping.request.encode(data)
+const decoded = echo.ping.request.decode(encoded)
 ```
 
 ## Documentation
