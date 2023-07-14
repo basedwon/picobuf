@@ -49,11 +49,23 @@ const Picobuf = require('picobuf')
 Then define your models, enums or services.
 
 ```js
+// create a picobuf instance
+const picobuf = new Picobuf({ User: { name: 'string' }})
+
+// or destructure the named model
 const { User } = new Picobuf({ User: { name: 'string' }})
+
+// create an instance of the model
 const user = User.create({ name: 'Alice' })
+
+// validate this data (throws an error if invalid)
+User.validate(user)
+
+// encode
 const encoded = User.encode(user)
+
+// decode
 const decoded = User.decode(encoded)
-User.validate(decoded)
 ```
 
 ## Documentation
