@@ -1,6 +1,6 @@
 # Picobuf
 
-> Good things come in small packets
+> good things come in small packets
 
 [![npm](https://img.shields.io/npm/v/picobuf?style=flat&logo=npm)](https://www.npmjs.com/package/picobuf)
 [![pipeline](https://gitlab.com/basedwon/picobuf/badges/master/pipeline.svg)](https://gitlab.com/basedwon/picobuf/-/pipelines)
@@ -121,6 +121,20 @@ Testing in the browser: *coming soon...*
 ## Contributing
 
 Thank you! Please see our [contributing guidelines](/docs/contributing.md) for details.
+
+## Donations
+
+If you find this project useful and want to help support further development, please send us some coin. We greatly appreciate any and all contributions. Thank you!
+
+**Bitcoin (BTC):**
+```
+1JUb1yNFH6wjGekRUW6Dfgyg4J4h6wKKdF
+```
+
+**Monero (XMR):**
+```
+46uV2fMZT3EWkBrGUgszJCcbqFqEvqrB4bZBJwsbx7yA8e2WBakXzJSUK8aqT4GoqERzbg4oKT2SiPeCgjzVH6VpSQ5y7KQ
+```
 
 ## License
 
