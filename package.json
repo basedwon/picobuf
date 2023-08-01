@@ -30,6 +30,7 @@
   },
   "types": "./lib/types.d.ts",
   "scripts": {
+    "dev": "nodemon -w .. -x npm test",
     "docs": "jsdoc2md lib/*.js > docs/api.md",
     "test": "testr test/index.n.test.js"
   },
